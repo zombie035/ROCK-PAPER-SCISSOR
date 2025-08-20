@@ -1,0 +1,103 @@
+body{
+    background-color:#EDD2E0;
+}
+.headbar{
+    background-color: none;
+}
+.container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: none;
+    height : 40vmin;
+    width : 95vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rockbutton{
+    background-color: #EDBBB4;
+    height : 16vh;
+    width : 16vh;
+    border-radius : 50%;
+    border-color: black;
+    
+}
+.rockimg{
+    padding-top : 3px;
+    height : 13vh;
+    width : 13vh;
+    border-radius : 50%;
+}
+.paperbutton{
+    background-color: #DBABBE;
+    height : 16vh;
+    width : 16vh;
+    border-radius : 50%;
+    border-color: black;
+}
+.paperimg{
+    padding-top : 3px;
+    height : 13vh;
+    width : 13vh;
+    border-radius : 50%;
+}
+.scissorbutton{
+    background-color: #BAA1A7;
+    height : 16vh;
+    width : 16vh;
+    border-radius : 50%;
+    border-color: black;
+}
+.scissorimg{
+    padding-top : 3px;
+    height : 13vh;
+    width : 13vh;
+    border-radius : 50%;
+}
+
+.score{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(0,0,0);
+    font-size: 20px;
+    margin-top: 50px;
+    display : flex;
+    background-color: none;
+    gap: 50px;
+}
+
+
+.rockbutton:active{
+    opacity:0.5;
+    border:none;
+}
+.paperbutton:active{
+    opacity:0.5;
+    border:none;
+}
+.scissorbutton:active{
+    opacity:0.5;
+    border:none;
+}
+
+/* Animation for win message */
+.win-animation {
+  animation: glow 0.8s ease-out;
+}
+
+@keyframes glow {
+  0% {
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.1);
+  }
+  50% {
+    background-color: #81c784;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: transparent;
+    color: black;
+    transform: scale(1);
+  }
+}
